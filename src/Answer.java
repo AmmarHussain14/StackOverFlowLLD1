@@ -22,7 +22,7 @@ public class Answer implements Votable, Commentable{
         this.isAccepted = false;
     }
     private int generateId() {
-        return (int) (Math.random()*1000);
+        return (int) (System.currentTimeMillis() % Integer.MAX_VALUE);
     }
 
     @Override

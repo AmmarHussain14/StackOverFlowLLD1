@@ -62,7 +62,7 @@ public class Question implements Votable, Commentable {
     }
 
     private int generateId() {
-        return (int) (Math.random()*1000);
+        return (int) (System.currentTimeMillis() % Integer.MAX_VALUE);
     }
 
     public int getId() {return id;}

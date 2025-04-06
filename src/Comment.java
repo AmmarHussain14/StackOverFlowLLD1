@@ -12,7 +12,7 @@ public class Comment {
     }
 
     private int generateId() {
-        return (int) (Math.random()*1000);
+        return (int) (System.currentTimeMillis() % Integer.MAX_VALUE);
     }
 
     // Getters

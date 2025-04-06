@@ -8,7 +8,7 @@ public class Tag {
     }
 
     private int generateId() {
-        return (int) (Math.random() *10000);
+        return (int) (System.currentTimeMillis() % Integer.MAX_VALUE);
     }
     public int getId(){
         return this.id;
